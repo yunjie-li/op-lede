@@ -18,5 +18,7 @@ echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.co
 
 echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 git clone https://github.com/kenzok8/luci-theme-ifit.git package/lean/luci-theme-ifit
+git clone https://github.com/1wrt/luci-app-ikoolproxy.git package/luci-app-ikoolproxy
+
 #git clone https://github.com/jerrykuku/lua-maxminddb.git package/lean/lua-maxminddb
 #git clone https://github.com/jerrykuku/luci-app-vssr.git package/lean/luci-app-vssr
