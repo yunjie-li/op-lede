@@ -16,9 +16,11 @@
 # Add a feed source
 
 # echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
-echo 'src-git small8 https://github.com/kenzok8/small-package' >>feeds.conf.default
 
-git clone https://github.com/kenzok8/luci-theme-ifit.git package/lean/luci-theme-ifit
+sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
+sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
+
+# git clone https://github.com/kenzok8/luci-theme-ifit.git package/lean/luci-theme-ifit
 
 #git clone https://github.com/jerrykuku/lua-maxminddb.git package/lean/lua-maxminddb
 #git clone https://github.com/jerrykuku/luci-app-vssr.git package/lean/luci-app-vssr
