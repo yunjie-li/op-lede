@@ -28,6 +28,9 @@ rm -rf feeds/packages/utils/v2dat
 rm -rf feeds/packages/lang/golang
 git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
 
+
+git clone https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom.git package/lean/luci-theme-ifit-ng
+
 # git clone https://github.com/kenzok8/luci-theme-ifit.git package/lean/luci-theme-ifit
 
 # git clone https://github.com/jerrykuku/lua-maxminddb.git package/lean/lua-maxminddb
