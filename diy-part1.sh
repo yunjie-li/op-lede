@@ -24,6 +24,9 @@ sed -i '$a src-git smpackage https://github.com/kenzok8/small-package' feeds.con
 
 rm -rf feeds/smpackage/{base-files,dnsmasq,firewall*,fullconenat,libnftnl,nftables,ppp,opkg,ucl,upx,vsftpd*,miniupnpd-iptables,wireless-regdb}
 
+rm -rf feeds/packages/lang/golang
+git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
+
 git clone https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom.git package/lean/luci-theme-ifit-ng
 
 # git clone https://github.com/kenzok8/luci-theme-ifit.git package/lean/luci-theme-ifit
