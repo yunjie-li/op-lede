@@ -106,6 +106,7 @@ jobs:
       id: package
       run: |
         cd openwrt
+        make clean
         echo -e 'CONFIG_DEVEL=y\nCONFIG_CCACHE=y' >> .config
         make defconfig
         make download -j16
@@ -116,7 +117,6 @@ jobs:
       id: compile
       run: |
         cd openwrt
-        make clean
         echo -e "$(nproc) thread compile"
         make -j$(nproc) || make -j1 || make -j1 V=s
         echo "::set-output name=status::success"
