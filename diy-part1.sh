@@ -17,9 +17,11 @@
 
 # echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 
-sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
-sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
+# sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
+# sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
 # git pull
+
+sed -i '$a src-git smpackage https://github.com/kenzok8/small-package' feeds.conf.default
 
 git clone https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom.git package/lean/luci-theme-ifit-ng
 
