@@ -23,7 +23,7 @@
 
 sed -i '$a src-git smpackage https://github.com/kenzok8/small-package' feeds.conf.default
 
-git clone https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom.git package/lean/luci-theme-ifit-ng
+# git clone https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom.git package/lean/luci-theme-ifit-ng
 
 # git clone https://github.com/kenzok8/luci-theme-ifit.git package/lean/luci-theme-ifit
 
